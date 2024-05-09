@@ -1,0 +1,70 @@
+<h1> Test Plan for the FS : FS1 </h1
+
+<i>Testplan powered by Google Gemini</i>
+
+<h3>Testcase ID: 1.1</h3>
+<h4>Testcase Title</h4>
+<ul>
+<li>Add Item</li>
+</ul>
+<h4>Test Topology</h4>
+<ul>
+<li>Android device with Inventory App installed</li>
+<li>Cloud datastore</li>
+</ul>
+<h4>Test Procedure</h4>
+<ol>
+<li>Launch the Inventory App on the Android device.</li>
+<li>Click on the "Add Item" button.</li>
+<li>Enter the details of the item, including name, description, category, and author/artist.</li>
+<li>Click on the "Save" button.</li>
+</ol>
+<h4>Pass Criteria</h4>
+<ul>
+<li>The item is added to the cloud datastore.</li>
+</ul>
+<h4>Glue Definition</h4>
+<ol>
+<li>Given I am on the "Add Item" screen<ul>
+<li>And I have entered the details of the item</li>
+</ul>
+</li>
+<li>When I click on the "Save" button<ul>
+<li>Then the item is added to the cloud datastore</li>
+</ul>
+</li>
+<li>Then I should see the item in the list of items</li>
+</ol>
+<h3>Testcase ID: 1.2</h3>
+<h4>Testcase Title</h4>
+<ul>
+<li>Edit Item</li>
+</ul>
+<h4>Test Topology</h4>
+<ul>
+<li>Android device with Inventory App installed</li>
+<li>Cloud datastore</li>
+</ul>
+<h4>Test Procedure</h4>
+<ol>
+<li>Launch the Inventory App on the Android device.</li>
+<li>Click on the item that you want to edit.</li>
+<li>Make the necessary changes to the item's details.</li>
+<li>Click on the "Save" button.</li>
+</ol>
+<h4>Pass Criteria</h4>
+<ul>
+<li>The changes to the item are saved to the cloud datastore.</li>
+</ul>
+<h4>Glue Definition</h4>
+<ol>
+<li>Given I am on the "Edit Item" screen<ul>
+<li>And I have made changes to the item's details</li>
+</ul>
+</li>
+<li>When I click on the "Save" button<ul>
+<li>Then the changes to the item are saved to the cloud datastore</li>
+</ul>
+</li>
+<li>Then I should see the updated item in the list of items</li>
+</ol>
